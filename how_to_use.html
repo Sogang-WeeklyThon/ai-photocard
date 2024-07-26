@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>How To Use</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+        <a class="navbar-brand mx-2" href="/">Custom Photo Maker</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary mx-1" href="/editor.html">Editor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-outline-primary mx-1" href="/how_to_use.html">How To Use</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Main Content for How To Use Guide -->
+    <main>
+        <section id="doc" class="bg-light mt-5">
+            <div class="display-5 text-muted ms-5">How To Use</div>
+            <div class="container-xxl py-3">
+                <div class="row" id="theight">
+                    <div class="col-md-2 mb-2 mb-md-auto bg-white shadow me-4 py-2" id="tableOfContents">
+                        <p class="fw-bold border-bottom mb-1 fs-5">Table Of Contents</p>
+                        <ul class="list-unstyled ps-0">
+                            <li class="mb-1">
+                                <a class="btn btn-toggle-no align-items-center rounded" href="#upload_HTU" aria-expanded="false">
+                                    &nbsp; &nbsp; Upload Image
+                                </a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="btn btn-toggle-no align-items-center rounded" href="#controls_HTU" aria-expanded="false">
+                                    &nbsp; &nbsp; Controls
+                                </a>
+                            </li>
+                            <li class="mb-1">
+                              <a class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#tools-collapse" aria-expanded="false">
+                                Tools
+                              </a>
+                              <div class="collapse" id="tools-collapse">
+                                <ul class="btn-toggle-nav list-unstyled small">
+                                  <li><a href="#crop_tools_HTU" class="link-dark rounded">Crop</a></li>
+                                  <li><a href="#rotate_tools_HTU" class="link-dark rounded">Rotate</a></li>
+                                  <li><a href="#flip_tools_HTU" class="link-dark rounded">Flip</a></li>
+                                  <li><a href="#text_tools_HTU" class="link-dark rounded">Text</a></li>
+                                  <li><a href="#watermark_tools_HTU" class="link-dark rounded">Watermark</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li class="mb-1">
+                                <a class="btn btn-toggle-no align-items-center rounded" href="#filters_HTU" aria-expanded="false">
+                                    &nbsp; &nbsp; Filters
+                                </a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="btn btn-toggle-no align-items-center rounded" href="#effects_HTU" aria-expanded="false">
+                                    &nbsp; &nbsp; Effects
+                                </a>
+                            </li>
+                            <li class="mb-1">
+                                <a class="btn btn-toggle-no align-items-center rounded" href="#download_HTU" aria-expanded="false">
+                                    &nbsp; &nbsp; Download
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col bg-white shadow py-2 px-4">
+                        <!-- Upload Image | How to use -->
+                        <div class="fw-bold display-5 mb-2" id="upload_HTU">Upload Image</div>
+                        <p class="fs-5">To upload an image click on the white canvas at the middle of the editor</p>
+                        <div class="callout callout-info">
+                            <p class="fs-6 fw-bold mb-0">Supported Formats:</p>
+                            <ul>
+                                <li><p class="fs-6">JPG</p></li>
+                                <li><p class="fs-6">PNG</p></li>
+                                <li><p class="fs-6">GIF</p></li>
+                                <li><p class="fs-6">WebP</p></li>
+                            </ul>
+                        </div>
+
+                        <hr class="mx-5">
+
+                        <!-- Controls | How to use -->
+                        <div class="fw-bold display-5 mb-2" id="controls_HTU">Controls</div>
+                        <p class="fs-5">At the bottom of the editor section, There are 3 buttons:</p>
+                        <ul>
+                            <li>
+                                <p class="fs-5 mb-0">Revert</p>
+                                <p class="fs-6">Click this button to revert the edited image to it's original state</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Zoom In/Out</p>
+                                <p class="fs-6">Use these buttons to Zoom In/Out</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Download</p>
+                                <p class="fs-6">Click this button to open the download menu</p>
+                            </li>
+                        </ul>
+
+                        <hr class="mx-5">
+
+                        <!-- Tools | How to use -->
+                        <div class="fw-bold display-5 mb-2">Tools</div>
+                        <div class="my-1"></div>
+
+                        <!-- Crop | Tools | How to use-->
+                        <div class="fw-bold display-6 mb-2" id="crop_tools_HTU">Crop</div>
+                        <p class="fs-5">Use this tool to crop the image</p>
+                        <p class="fs-5 mb-0">Tool requirements:</p>
+                        <ul>
+                            <li>
+                                <p class="fs-5 mb-0">Rectangle</p>
+                                <p class="fs-6">Specify a rectangle coordinates to crop the image</p>
+                                <ul>
+                                    <li>
+                                        <p class="fs-6 mb-0">Left: The left Column </p>
+                                    </li>
+                                    <li>
+                                        <p class="fs-6 mb-0">Top: The top Row </p>
+                                    </li>
+                                    <li>
+                                        <p class="fs-6 mb-0">Right: The right column</p>
+                                    </li>
+                                    <li>
+                                        <p class="fs-6 mb-0">Bottom: The bottom Row</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="callout callout-info">
+                            <ul>
+                                <li>Left and Right values can't be greater than the image width</li>
+                                <li>Right value must be greater than the Left value</li>
+                                <li>Top and Bottom values can't be greater than the image height</li>
+                                <li>Bottom value must be greater than the Top value</li>
+                            </ul>
+                        </div>
+
+                        <!-- Rotate | Tools | How to use -->
+                        <div class="fw-bold display-6 mb-2" id="rotate_tools_HTU">Rotate</div>
+                        <p class="fs-5">Use this tool to rotate the image</p>
+                        <p class="fs-5 mb-0">Tool requirements:</p>
+                        <ul>
+                            <li>
+                                <p class="fs-5 mb-0">Angle</p>
+                                <p class="fs-6">Specify an angle to rotate the image</p>
+                            </li>
+                        </ul>
+                        <div class="callout callout-info">
+                            <ul>
+                                <li>To rotate the image clockwise, use a negative value</li>
+                                <li>To rotate the image anticlockwise, use a positive value</li>
+                            </ul>
+                        </div>
+
+                        <!-- Flip | Tools | How to Use -->
+                        <div class="fw-bold display-6 mb-2" id="flip_tools_HTU">Flip</div>
+                        <p class="fs-5">Use this tool to flip the image</p>
+                        <p class="fs-5 mb-0">Tool requirements:</p>
+                        <ul>
+                            <li>
+                                <p class="fs-5 mb-0">Axis</p>
+                                <p class="fs-6">Specify an axis to flip the image on</p>
+                            </li>
+                        </ul>
+
+                        <!-- Text | Tools | How to use -->
+                        <div class="fw-bold display-6 mb-2" id="text_tools_HTU">Text</div>
+                        <p class="fs-5">Use this tool to add text to the image</p>
+                        <p class="fs-5 mb-0">Tool requirements:</p>
+                        <ul>
+                            <li>
+                                <p class="fs-5 mb-0">Text</p>
+                                <p class="fs-6">A string for the text you want to add</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Font</p>
+                                <p class="fs-6">Specify a font for the text</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Size</p>
+                                <p class="fs-6">Specify a size for the text</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Color</p>
+                                <p class="fs-6">Choose a color for the text</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Position</p>
+                                <p class="fs-6">choose a position for the text</p>
+                            </li>
+                        </ul>
+                        <div class="callout callout-info">
+                            <p class="fs-6 fw-bold mb-0">Supported Fonts:</p>
+                            <ul>
+                                <li>arial</li>
+                                <li>comic sans ms</li>
+                                <li>serif</li>
+                                <li>cursive</li>
+                                <li>monospace</li>
+                                <li>For more Fonts, visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family" target="_blank">CSS Font-Family</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Watermark | Tools | How to use -->
+                        <div class="fw-bold display-6 mb-2" id="watermark_tools_HTU">Watermark</div>
+                        <p class="fs-5">Use this tool to add a watermark to the image</p>
+                        <p class="fs-5 mb-0">Tool requirements:</p>
+                        <ul>
+                            <li>
+                                <p class="fs-5 mb-0">Watermark File</p>
+                                <p class="fs-6">An image file of the watermark</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Opacity</p>
+                                <p class="fs-6">Specify a value for the opacity of the watermark</p>
+                            </li>
+                            <li>
+                                <p class="fs-5 mb-0">Position</p>
+                                <p class="fs-6">choose a position for the watermark</p>
+                            </li>
+                        </ul>
+
+                        <hr class="mx-5">
+
+                        <!-- Filters | How to use -->
+                        <div class="fw-bold display-5 mb-2" id="filters_HTU">Filters</div>
+                        <p class="fs-5">There are 4 filters. Which are</p>
+                        <ul>
+                            <li>Brightness</li>
+                            <li>Contrast</li>
+                            <li>Saturation</li>
+                            <li>Vibrance</li>
+                        </ul>
+                        <p class="fs-5">Each filter has 2 buttons, A button <code>"+"</code> to increase it's value and another button <code>"-"</code> to decrease it</p>
+                        
+                        <hr class="mx-5">
+
+                        <!-- Effects | How to use -->
+                        <div class="fw-bold display-5 mb-2" id="effects_HTU">Effects</div>
+                        <p class="fs-5">Effects are just a combination of multiple filters with specific values</p>
+                        <p class="fs-5">Click on an effect to apply it</p>
+
+                        <hr class="mx-5">
+
+                        <!-- Download | How to use -->
+                        <div class="fw-bold display-5 mb-2" id="download_HTU">Download</div>
+                        <p class="fs-5">To open the download menu click on the download button at the bottom right corner of the editor</p>
+                        <p class="fs-5">After opening the menu, Specify a "File Name" And a "File Format"</p>
+                        <div class="callout callout-info">
+                            <ul>
+                                <li><p class="my-0">Use "PNG" for transparent background</p></li>
+                                <li><p class="my-0">Use "JPG" for a smaller file size</p></li>
+                            </ul>
+                        </div>
+                        <p class="fs-5">Then click on the download button</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- toasts -->
+    <section>
+        <!-- warning notification -->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="warning_toast" class="toast" role="alert" data-bs-delay="10000">
+              <div class="toast-header">
+                <i class="bi bi-exclamation-diamond text-warning"></i>
+                <div class="vr mx-1"></div>
+                <strong class="me-auto">Warning</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Warning
+              </div>
+            </div>
+          </div>
+    </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>

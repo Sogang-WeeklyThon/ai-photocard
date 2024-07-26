@@ -1,0 +1,13 @@
+openai==0.28.0
+gradio
+fastapi
+rembg[gpu]
+uvicorn
+numpy
+opencv-python
+discord.py
+transformers
+torch
+diffusers
+accelerate
+python-dotenv
